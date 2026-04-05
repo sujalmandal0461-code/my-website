@@ -1,154 +1,160 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Royal Salon Booking</title>
+  <p>⏰ Mon–Sun: 9 AM – 9 PM</p>
+<title>Aakash Saloon Wala</title>
+<p>📍 Chandrapur, Maharashtra</p>
+<section>
+<h2>Customer Reviews</h2>
 
-  <style>
-    body {
-      font-family: Arial;
-      text-align: center;
-      background: linear-gradient(120deg, #f6f6f6, #dff6ff);
-      animation: fadeIn 1s ease-in;
-    }
+<p>⭐ "Best haircut in town!"</p>
+<p>⭐ "Affordable and professional service"</p>
 
-    @keyframes fadeIn {
-      from {opacity: 0;}
-      to {opacity: 1;}
-    }
+</section>
+<style>
+body{
+  font-family: Arial;
+  margin: 0;
+  background: #111;
+  color: white;
+}
+/* 👇  */
+button {
+  background: gold;
+  color: black;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+}
 
-    .title {
-      font-size: 24px;
-      font-weight: bold;
-      margin-top: 15px;
-      animation: slideDown 1s ease;
-    }
 
-    @keyframes slideDown {
-      from {transform: translateY(-50px); opacity: 0;}
-      to {transform: translateY(0); opacity: 1;}
-    }
 
-    .address {
-      color: gray;
-      margin-bottom: 10px;
-      animation: fadeIn 2s ease;
-    }
+/* Header */
+header {
+ header {
+  background: url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 40px;
+} background: linear-gradient(to right, #000, #444);
+  text-align: center;
+  padding: 20px;
+}
 
-    .box {
-      background: white;
-      padding: 20px;
-      margin: 20px auto;
-      width: 300px;
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.2);
-      animation: zoomIn 1s ease;
-    }
+header h1 {
+  margin: 0;
+  font-size: 30px;
+  color: gold;
+}
 
-    @keyframes zoomIn {
-      from {transform: scale(0.8); opacity: 0;}
-      to {transform: scale(1); opacity: 1;}
-    }
+/* Sections */
+section {
+  padding: 20px;
+  text-align: center;
+}
 
-    input {
-      width: 90%;
-      padding: 8px;
-      margin: 8px 0;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
+/* Service Box */
+ul {
+  list-style: none;
+  padding: 0;
+}
 
-    button {
-      padding: 10px;
-      width: 100%;
-      background: green;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
+li {
+  background: #222;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
 
-    button:hover {
-      background: darkgreen;
-      transform: scale(1.05);
-    }
+/* Hover effect */
+li:hover {
+  background: gold;
+  color: black;
+  transform: scale(1.05);
+}
 
-    .seat {
-      display: inline-block;
-      padding: 10px;
-      margin: 5px;
-      background: #ddd;
-      cursor: pointer;
-      border-radius: 5px;
-      transition: 0.3s;
-    }
+/* Button */
+button {
+  background: green;
+  color: rgb(255, 255, 255);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+}
 
-    .seat:hover {
-      transform: scale(1.1);
-    }
+button:hover {
+  background: rgb(0, 18, 100);
+}
 
-    .selected {
-      background: orange;
-      transform: scale(1.1);
-    }
-  </style>
+/* Footer */
+footer {
+  background: #000;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+</style>
+
 </head>
 
 <body>
 
-<div class="title">💈 Royal Salon Booking System</div>
-<div class="address">📍 Chandrapur, Maharashtra</div>
+<header>
+<h1>✂️ Aakash Saloon Wala</h1>
+<p>Best Hair Style in Town</p>
+</header>
 
-<div class="box">
+<section>
+<h2>About Us</h2>
+<p>Hum professional hair cutting aur styling service provide karte hai.</p>
+</section>
 
-  <input type="text" id="name" placeholder="Enter Name">
-  <input type="text" id="phone" placeholder="Phone Number">
-  <input type="time" id="time">
+<section>
+<h2>Our Services</h2>
+<ul>
+  
+<li>✂️ Hair Cutting - ₹100</li>
+<li>🧔 Beard Trim - ₹50</li>
+<li>💇 Hair Styling - ₹60</li>
+<li>🧴 Hair Wash - ₹40</li>
+<li>🌿 Facial - ₹60</li>
+<li>💆 Head Massage - ₹50</li>
+</ul>
+</section>
 
-  <h4>Select Seat</h4>
-  <div id="seats"></div>
+<section>
+<h2>Contact</h2>
+<p>📞 929262136</p>
+<section>
+<h2>Customer Reviews</h2>
 
-  <button onclick="bookSeat()">Book Seat</button>
+<section>
+<h2>Book Appointment</h2>
 
-</div>
+<p>Click below to book your slot:</p>
 
-<script>
-let selectedSeat = "";
+<a href="https://docs.google.com/forms/d/e/1FAIpQLScLvAg5h8_pUAtYL-o8DOfp9x0xOcyh08Mik-_jMftQ1KqN-A/viewform?usp=publish-editor" target="_blank">
+<button>📅 Book Now</button>
+</a>
 
-for(let i=1; i<=9; i++){
-  let div = document.createElement("div");
-  div.className = "seat";
-  div.innerText = i;
+</section>
 
-  div.onclick = function(){
-    let all = document.querySelectorAll(".seat");
-    all.forEach(s => s.classList.remove("selected"));
-    div.classList.add("selected");
-    selectedSeat = i;
-  }
+</a>
+<p>⭐ "Best haircut in town!"</p>
+<p>⭐ "Affordable and professional service"</p>
 
-  document.getElementById("seats").appendChild(div);
-}
+</section>
+<a href="https://wa.me/9529262136">
+<button>💬 Contact on WhatsApp</button>
+</a>
+</section>
 
-function bookSeat(){
-  let name = document.getElementById("name").value;
-  let phone = document.getElementById("phone").value;
-  let time = document.getElementById("time").value;
-
-  if(name=="" || phone=="" || time=="" || selectedSeat==""){
-    alert("❌ Sab fill karo bhai!");
-    return;
-  }
-
-  alert("💈 Booking Confirmed!\nName: "+name+"\nSeat: "+selectedSeat);
-
-  if(Notification.permission === "granted"){
-    new Notification("💈 Salon Booking", {
-      body: name + " ne seat " + selectedSeat + " book ki hai"
-    });
-  }
-}
-</script>
+<footer>
+<p>©@ 2026 Aakash Saloon Wala</p>
+</footer>
 
 </body>
 </html>
