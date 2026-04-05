@@ -223,6 +223,26 @@ footer {
 <footer>
 <p>©@ 2026 Aakash Saloon Wala</p>
 </footer>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
 
+  document.querySelectorAll('.seat').forEach(seat => {
+    seat.addEventListener('click', function () {
+      this.classList.toggle('selected');
+    });
+  });
+
+});
+
+function bookSeat() {
+  let selected = document.querySelectorAll('.seat.selected');
+
+  if (selected.length === 0) {
+    alert("⚠️ No seat selected!");
+  } else {
+    alert("🎟 " + selected.length + " seat booked successfully!");
+  }
+}
+</script>
 </body>
 </html>
