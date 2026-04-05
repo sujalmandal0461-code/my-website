@@ -165,7 +165,23 @@ footer {
   margin-top: 20px;
 }
 </style>
+    
+#toast {
+    visibility: hidden;
+    min-width: 200px;
+    background-color: green;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    padding: 12px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
 
+#toast.show {
+    visibility: visible;
+}
 </head>
   
 <body>
@@ -223,25 +239,26 @@ footer {
 <footer>
 <p>©@ 2026 Aakash Saloon Wala</p>
 </footer>
+  
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-
-  document.querySelectorAll('.seat').forEach(seat => {
-    seat.addEventListener('click', function () {
-      this.classList.toggle('selected');
-    });
-  });
-
-});
-
 function bookSeat() {
-  let selected = document.querySelectorAll('.seat.selected');
+    let selected = document.querySelectorAll('.seat.selected');
 
-  if (selected.length === 0) {
-    alert("⚠️ No seat selected!");
-  } else {
-    alert("🎟 " + selected.length + " seat booked successfully!");
-  }
+    let toast = document.getElementById("toast");
+
+<div id="toast"></div>
+  
+    if(selected.length === 0){
+        toast.innerText = "⚠️ No seat selected!";
+    } else {
+        toast.innerText = "🎟 " + selected.length + " seat booked!";
+    }
+
+    toast.classList.add("show");
+
+    setTimeout(() => {
+        toast.classList.remove("show");
+    }, 2000);
 }
 </script>
 </body>
